@@ -1,0 +1,41 @@
+﻿<Window x:Class="ClientGUI.SelectedWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ClientGUI"
+        mc:Ignorable="d"
+        Title="SelectedWindow" Height="300" Width="300">
+
+    <!-- 
+  /////////////////////////////////////////////////////////////////////////////
+  // SelectedWindow.xaml                                                     //
+  // Ver 1.0                                                                 //
+  // Quanfeng Du, CSE681, Fall 2017                                          //
+  /////////////////////////////////////////////////////////////////////////////
+  
+   Purpose:
+     Prototype for a secondary popup window for the Client.  
+     
+   Required Files:
+     MainWindow.xaml, MainWindow.xaml.cs - view into repository and checkin/checkout
+     SelectedWindow.xaml, SelectedWindow.xaml.cs      
+  
+   Maintenance History:
+     ver 1.0 : 17 Oct 2017
+     - first release
+  -->
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+        </Grid.RowDefinitions>
+        <ListBox Grid.Row="0" Name="selectedFiles" Padding="3"></ListBox>
+        <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="10" HorizontalAlignment="Center">
+            <Button Name="generateRequest" Width="80" Click="generaterequest">Create Request</Button>
+            <Label Width="50"></Label>
+            <Button Name="exitButton" Width="80" Click="exitButton_Click">Exit</Button>
+        </StackPanel>
+
+    </Grid>
+</Window>

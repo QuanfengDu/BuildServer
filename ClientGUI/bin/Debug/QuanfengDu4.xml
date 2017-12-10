@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<testRequest>
+  <author>QuanfengDu4</author>
+  <dateTime>11/26/2017 4:44:32 PM</dateTime>
+  <toolChain>MSBuild</toolChain>
+  <test>
+    <testDriver>TestDriver.cs</testDriver>
+    <directory>test5</directory>
+    <tested>Tested1.cs</tested>
+    <tested>Tested2.cs</tested>
+  </test>
+</testRequest>
